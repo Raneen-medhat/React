@@ -25,12 +25,12 @@ class CartCom extends Component {
                     <a className="dropdown-item" href="#">{this.props.count}</a>
                         
                     <ul>
-                        {/* if (this.state.cartList) {
+                      
 
-                        this.state.cartList.map(item => (
-                            <li key={item.id}>{item.Title}</li>
-                        ))
-                        } */}
+                        {this.state.cartList.map(item => (
+                            <li key={item.id}>{item.title}</li>
+                        ))}
+                        
                         
                     </ul>
 

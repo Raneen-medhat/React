@@ -29,10 +29,10 @@ class App extends Component {
     psuh each clicked item in cartlist array 
   */ 
   updateItem( newItem ) {
-    let list = this.state.cartList.concat(newItem);
-    this.setState({
-      cartList: list
-    })
+    this.state.cartList.push(newItem);
+    this.setState(
+      this.state
+    )
     console.log(this.state.cartList)
   }
 
